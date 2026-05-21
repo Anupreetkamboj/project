@@ -1,0 +1,181 @@
+<html>
+<head>
+<title>portfolio</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-style:italic;
+}
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:30vh;
+background-image:url(electronicshopphoto.jpg);
+background-size:cover;
+background-position:center bottom;
+background-repeat:no-repeat;
+
+}
+.card{
+position:relative;
+width:600px;
+height:300px;
+border-radius:10px; 
+              background:#fff;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+.card:hover .back{
+transform:rotateY(0deg);
+}
+.card:hover .front{
+transform:rotateY(180deg);
+
+}
+
+.back{
+backface-visibility:hidden;
+transform:rotateY(180deg);
+transition:0.5s ease-out;
+}
+.front{
+position:absolute;
+background:#000;
+height:300px;
+width:600px;
+border-radius:10px;
+justify-content:center;
+align-items:center;
+text-align:center;
+backface-visibility:hidden;
+transform:rotateY(0deg);
+transition:0.5s ease-out;
+z-index:2;
+
+}
+.front img{
+width:140px;
+margin-top:9%;
+}
+.front h1{
+font-size:30px;
+color:#fff;
+letter-spacing:0.5px;
+margin-top:-1px;
+}
+.col-1{
+width:160px;
+height:300px;
+background:#000;
+border-radius:10px 0 0 10px;
+float:left;
+text-align:center;
+}
+.col-1 img{
+width:140px;
+margin:0px 10px;
+margin-top:20px;
+}
+
+.col-1 h2{
+font-size:20px;
+color:#fff;
+margin-top:-15px;
+}
+.col-2{
+width:440px;
+height:300px;
+background:#fff;
+border-radius:0 10px 10px 0;
+float:right;
+}
+.col-2 h2{
+font-size:20px;
+color:#fff;
+}
+
+.container{
+margin: 21px;
+}
+.title{
+font-size:2.4rem;
+color:#000;
+font-weight:500;
+}
+.profession{
+font-size:1.6rem;
+color:#000;
+font-weight:500;
+padding:5px 0;
+border-bottom:3px solid#000;
+width:90%;
+}
+.content{
+margin:16px 0;
+font-size:1.6rem;
+
+}
+.content h3{
+font-size:20px;
+color:#000;
+font-weight:500;
+margin:5px 0;
+}
+.content button{
+font-size:11px;
+font-weight:500;
+margin:5px 0;
+text-color:#000;
+}
+
+
+
+</style>
+
+
+
+ 
+  </head>
+
+
+<body>
+<div class="card">
+    <div class="front">
+    <img src="instalogo.png">
+     <h1><b>electronics_item48<b></h1>
+     </div>
+  <div class="back">
+  <div class="col-1">
+  <img src="shopphoto.jpg">
+  <h2></h2>
+   </div>
+<div class="col-2">
+<div class="container">
+<div class="title">Malhi electronics</div>
+<div class="profession">Wholesale and Retail</div>
+
+
+
+<div class="content">
+<h3>Mobile: 8427920120</h3>
+<h3>Best deals in antique products and all electronic items</h3>
+<h3>HOME DELIVERY AVAILABLE IN PUNJAB, HARYANA AND HIMACHAL</h3>
+<h3>Address:- Bhunerheri, Patiala</h3>
+<button><a href="index.html">click here to see our products</a></button>
+
+</div>
+
+ </div>
+
+</div>
+</div>
+</body>
+
+
+
+
+          </html>

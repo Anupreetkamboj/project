@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kadhaiye Shop Showcase</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #fff7f0, #fff);
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      scroll-snap-align: start;
+      padding: 20px;
+    }
+
+    .product-card {
+      background: #ffffffee;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .product-card h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #a84300;
+    }
+
+    .product input[type="radio"] {
+      display: none;
+    }
+
+    .main-image {
+      border: 4px solid #f3e0d5;
+      border-radius: 15px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      height: 320px;
+    }
+
+    .main-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    /* Show selected image */
+    #p1-img1:checked ~ .main-image .img1,
+    #p1-img2:checked ~ .main-image .img2,
+    #p1-img3:checked ~ .main-image .img3,
+    #p2-img1:checked ~ .main-image .img1,
+    #p2-img2:checked ~ .main-image .img2,
+    #p2-img3:checked ~ .main-image .img3 {
+      display: block;
+    }
+
+    .thumbnails {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .thumbnails label {
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .thumbnails label:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .thumbnails img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Product 1 -->
+  <section>
+    <div class="product-card">
+      <h1>Kadhaiye Dupatta</h1>
+      <div class="product">
+        <input type="radio" name="p1-gallery" id="p1-img1" checked>
+        <input type="radio" name="p1-gallery" id="p1-img2">
+        <input type="radio" name="p1-gallery" id="p1-img3">
+
+        <div class="main-image">
+          <img src="https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?w=800&q=80" class="img1" alt="Dupatta embroidery">
+          <img src="https://images.unsplash.com/photo-1592853625601-bbdb0f5b3f71?w=800&q=80" class="img2" alt="Embroidery close-up">
+          <img src="https://images.unsplash.com/photo-1604578762099-3d7e3b4e8f7c?w=800&q=80" class="img3" alt="Full view">
+        </div>
+
+        <div class="thumbnails">
+          <label for="p1-img1"><img src="https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?w=200&q=80"></label>
+          <label for="p1-img2"><img src="https://images.unsplash.com/photo-1592853625601-bbdb0f5b3f71?w=200&q=80"></label>
+          <label for="p1-img3"><img src="https://images.unsplash.com/photo-1604578762099-3d7e3b4e8f7c?w=200&q=80"></label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product 2 -->
+  <section>
+    <div class="product-card">
+      <h1>Kadhaiye Saree</h1>
+      <div class="product">
+        <input type="radio" name="p2-gallery" id="p2-img1" checked>
+        <input type="radio" name="p2-gallery" id="p2-img2">
+        <input type="radio" name="p2-gallery" id="p2-img3">
+
+        <div class="main-image">
+          <img src="https://images.unsplash.com/photo-1602810318383-e8a0d65b1b56?w=800&q=80" class="img1" alt="Saree front view">
+          <img src="https://images.unsplash.com/photo-1602810318254-69e2e87222d6?w=800&q=80" class="img2" alt="Saree embroidery detail">
+          <img src="https://images.unsplash.com/photo-1602810318309-9cc0ef9b8671?w=800&q=80" class="img3" alt="Saree draping">
+        </div>
+
+        <div class="thumbnails">
+          <label for="p2-img1"><img src="https://images.unsplash.com/photo-1602810318383-e8a0d65b1b56?w=200&q=80"></label>
+          <label for="p2-img2"><img src="https://images.unsplash.com/photo-1602810318254-69e2e87222d6?w=200&q=80"></label>
+          <label for="p2-img3"><img src="https://images.unsplash.com/photo-1602810318309-9cc0ef9b8671?w=200&q=80"></label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
